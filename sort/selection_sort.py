@@ -1,3 +1,9 @@
+# 选择排序 SelectionSort
+# 原地排序算法
+# 不稳定排序算法
+# 时间复杂度：
+# 最好、最坏、平均 O(n^2)
+
 def find_smallest(arr, start_index, end_index):
     smallest = arr[start_index]
     smallest_index = start_index

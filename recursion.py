@@ -34,7 +34,7 @@ def recursion_greatest_divisor(x, y):
     return recursion_greatest_divisor(y, left)
 
 
-# 最大公约数循环棒棒
+# 最大公约数循环版本
 # x >= y, x >= 1, y >= 1
 def loop_greatest_divisor(x, y):
     left = 1

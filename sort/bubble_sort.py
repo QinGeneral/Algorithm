@@ -1,3 +1,9 @@
+# 冒泡排序 Bubble Sort
+# 原地排序算法
+# 稳定排序算法
+# 时间复杂度：
+# 最好 O(n)、最坏 O(n^2)、平均 O(n^2)
+
 def bubble_sort(array):
     if len(array) <= 1:
         return array
