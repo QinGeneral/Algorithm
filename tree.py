@@ -25,7 +25,7 @@ def inOrder(node: BinaryTreeNode):
         return
 
     inOrder(node.left)
-    print(node.val)
+    print(node.val, node.childNum)
     inOrder(node.right)
 
 
@@ -45,11 +45,11 @@ def printNode(node: BinaryTreeNode):
     print(node.val)
 
 
-preOrder(rootNode)
-print("---------------")
-inOrder(rootNode)
-print("---------------")
-postOrder(rootNode)
-print("---------------")
-printNode(rootNode)
-levelOrder(rootNode)
+# preOrder(rootNode)
+# print("---------------")
+# inOrder(rootNode)
+# print("---------------")
+# postOrder(rootNode)
+# print("---------------")
+# printNode(rootNode)
+# levelOrder(rootNode)
