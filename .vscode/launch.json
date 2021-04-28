@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - test",
             "request": "launch",
             "mainClass": "test",
