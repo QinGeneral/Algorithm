@@ -75,6 +75,8 @@ let MaxHeap = {
 let heap = MaxHeap;
 heap.init();
 heap.insert(5);
+heap.insert(5);
+console.log(heap.array)
 heap.insert(3);
 heap.insert(6);
 heap.insert(9);
