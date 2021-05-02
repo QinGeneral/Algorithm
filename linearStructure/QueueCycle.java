@@ -1,3 +1,4 @@
+package linearStructure;
 public class QueueCycle {
     
     String[] array;

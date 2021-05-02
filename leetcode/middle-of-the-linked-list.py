@@ -1,4 +1,4 @@
-from node import ListNode
+from ListNode import ListNode
 
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:

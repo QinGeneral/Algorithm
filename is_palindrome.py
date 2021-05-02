@@ -1,4 +1,4 @@
-from node import ListNode
+from ListNode import ListNode
 
 
 # 回文串单链表实现

@@ -3,3 +3,5 @@ class ListNode:
         self.val = val
         self.next = next
         self.pre = pre
+    def setKey(self, key):
+        self.key = key

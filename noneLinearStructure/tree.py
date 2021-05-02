@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 from BinaryTreeNode import BinaryTreeNode
 
 rootNode = BinaryTreeNode(1)
@@ -38,6 +40,18 @@ def postOrder(node: BinaryTreeNode):
     print(node.val)
 
 
+def levelOrder(node: BinaryTreeNode):
+    queue = []
+    queue.append(node)
+    while queue:
+        temp = queue.pop(0)
+        print(temp.val)
+        if temp.left:
+            queue.append(temp.left)
+        if temp.right:
+            queue.append(temp.right)
+
+
 def printNode(node: BinaryTreeNode):
     if node == None:
         return
@@ -45,11 +59,12 @@ def printNode(node: BinaryTreeNode):
     print(node.val)
 
 
-# preOrder(rootNode)
-# print("---------------")
-# inOrder(rootNode)
-# print("---------------")
-# postOrder(rootNode)
-# print("---------------")
-# printNode(rootNode)
-# levelOrder(rootNode)
+preOrder(rootNode)
+print("---------------")
+inOrder(rootNode)
+print("---------------")
+postOrder(rootNode)
+print("---------------")
+printNode(rootNode)
+print("---------------")
+levelOrder(rootNode)

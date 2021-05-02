@@ -1,3 +1,4 @@
+package linearStructure;
 
 class LinkedList {
 
