@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append("..")
 from BinaryTreeNode import BinaryTreeNode
 
@@ -20,6 +21,24 @@ def preOrder(node: BinaryTreeNode):
     print(node.val)
     preOrder(node.left)
     preOrder(node.right)
+
+
+def preOrder(root: TreeNode) -> List[int]:
+    if not root:
+        return []
+    result = []
+    stack = []
+    temp = root
+    stack.append(root)
+    while stack:
+        node = stack.pop()
+        result.append(node.val)
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+
+    return result
 
 
 def inOrder(node: BinaryTreeNode):

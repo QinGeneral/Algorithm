@@ -44,3 +44,20 @@ class AnotherSolution:
                 sum = 1 / x * sum
 
         return sum
+
+
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n == 0:
+            return 1
+        isPositive = n > 0
+        if not isPositive:
+            n = -n
+        if n == 1:
+            return x if isPositive else 1 / x
+        if n % 2 == 0:
+            r = self.myPow(x, n // 2)
+            return r * r if isPositive else 1 / (r * r)
+        else:
+            r = self.myPow(x, n // 2)
+            return r * r * x if isPositive else 1 / (r * r * x)
