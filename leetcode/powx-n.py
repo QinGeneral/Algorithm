@@ -61,3 +61,17 @@ class Solution:
         else:
             r = self.myPow(x, n // 2)
             return r * r * x if isPositive else 1 / (r * r * x)
+
+
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n < 0:
+            x = 1 / x
+            n = -n
+        pow = 1
+        while n:
+            if n & 1:
+                pow *= x
+            x *= x
+            n >>= 1
+        return pow
