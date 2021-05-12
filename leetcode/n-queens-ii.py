@@ -26,5 +26,27 @@ class Solution:
                 leftUp -= 1
                 rightUp += 1
             return True
+
         dfs(chess, 0)
         return len(r)
+
+
+class Solution:
+    def totalNQueens(self, n: int) -> int:
+
+        self.count = 0
+        def dfs(row, col, pie, na):
+            if row == n:
+                self.count += 1
+                return
+            # 得到空位
+            bits = (~(col | pie | na)) & ((1 << n) - 1)
+            while bits:
+                # 得到最后一个 1
+                p = bits & -bits
+                dfs(row + 1, col | p, (pie | p) << 1, (na | p) >> 1)
+                # 去掉最后一位 1
+                bits &= bits - 1
+
+        dfs(0, 0, 0, 0)
+        return self.count

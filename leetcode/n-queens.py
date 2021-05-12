@@ -1,5 +1,5 @@
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> [[str]]:
 
         chess = [-1] * n
         r = []
@@ -44,7 +44,7 @@ class Solution:
 
 
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> [[str]]:
 
         chess = [-1] * n
         r = []
@@ -86,3 +86,36 @@ class Solution:
 
         dfs(chess, 0)
         return r
+
+# 位运算版本，输出还没有搞定 todo
+class Solution:
+    def solveNQueens(self, n: int) -> [[str]]:
+
+        r = []
+
+        self.rowStr = []
+        def dfs(row, col, pie, na):
+            if row == n:
+                r.append(self.rowStr)
+                print(self.rowStr)
+                self.rowStr = []
+                return
+            # 得到空位
+            bits = (~(col | pie| na)) & ((1 << n) - 1)
+            while bits:
+                # 得到最后一个 1
+                p = bits & -bits
+                if row == 0:
+                    self.rowStr = []
+                self.rowStr.append(bin(p)[2:].zfill(n).replace('1', 'Q').replace('0', '.'))
+                print(row, self.rowStr)
+                dfs(row + 1, col | p, (pie | p) << 1, (na | p) >> 1)
+                # 去掉最后一位 1
+                bits &= bits - 1
+            if row == 0:
+                self.rowStr = []
+        dfs(0, 0, 0, 0)
+        return r
+
+
+print(Solution().solveNQueens(5))
