@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "leetcode.test",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution22",
+            "request": "launch",
+            "mainClass": "leetcode.Solution22",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution2",
+            "request": "launch",
+            "mainClass": "leetcode.Solution2",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "leetcode.Solution",
+            "projectName": "Algorithm_54041f9f"
+        },
+        {
+            "type": "java",
             "name": "Launch LinkedList",
             "request": "launch",
             "mainClass": "LinkedList",
