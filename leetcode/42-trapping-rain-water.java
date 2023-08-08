@@ -75,3 +75,39 @@ class Solution {
         return ans;
     }
 }
+
+// 2023-08-02
+class Solution {
+    public int trap(int[] height) {
+        if (height.length < 3) {
+            return 0;
+        }
+        int water = 0, savedWater = 0;
+        int start = 0, end = height.length - 1;
+        int leftMax = height[start];
+        int rightMax = height[end];
+
+        while (start < end) {
+            if (leftMax <= rightMax) {
+                int value = height[start + 1];
+                while (value < leftMax && value < rightMax) {
+                    water += leftMax - value;
+                    start++;
+                    value = height[start + 1];
+                }
+                start++;
+                leftMax = height[start];
+            } else {
+                int value = height[end - 1];
+                while (value < leftMax && value < rightMax) {
+                    water += rightMax - value;
+                    end--;
+                    value = height[end - 1];
+                }
+                end--;
+                rightMax = height[end];
+            }
+        }
+        return water;
+    }
+}

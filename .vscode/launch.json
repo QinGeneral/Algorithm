@@ -6,6 +6,118 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution394",
+            "request": "launch",
+            "mainClass": "leetcode.Solution394",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution20",
+            "request": "launch",
+            "mainClass": "leetcode.Solution20",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution32",
+            "request": "launch",
+            "mainClass": "leetcode.Solution32",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution75",
+            "request": "launch",
+            "mainClass": "leetcode.Solution75",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution238",
+            "request": "launch",
+            "mainClass": "leetcode.Solution238",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution189",
+            "request": "launch",
+            "mainClass": "leetcode.Solution189",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution56",
+            "request": "launch",
+            "mainClass": "leetcode.Solution56",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution53",
+            "request": "launch",
+            "mainClass": "leetcode.Solution53",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution76",
+            "request": "launch",
+            "mainClass": "leetcode.Solution76",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution239",
+            "request": "launch",
+            "mainClass": "leetcode.Solution239",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution560",
+            "request": "launch",
+            "mainClass": "leetcode.Solution560",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution11",
+            "request": "launch",
+            "mainClass": "leetcode.Solution11",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution283",
+            "request": "launch",
+            "mainClass": "leetcode.Solution283",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution49",
+            "request": "launch",
+            "mainClass": "leetcode.Solution49",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution200",
+            "request": "launch",
+            "mainClass": "leetcode.Solution200",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "leetcode.Solution",
+            "projectName": "Algorithm_50f44dbc"
+        },
+        {
+            "type": "java",
             "name": "Launch test",
             "request": "launch",
             "mainClass": "test.test",
