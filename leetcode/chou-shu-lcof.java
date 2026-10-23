@@ -1,6 +1,10 @@
+import java.util.HashSet;
+import java.util.PriorityQueue;
+import java.util.Set;
+
 class Solution {
     public int nthUglyNumber(int n) {
-        int[] factores = new int[]{2, 3, 5};
+        int[] factores = new int[] { 2, 3, 5 };
         Set<Long> seen = new HashSet<Long>();
         PriorityQueue<Long> queue = new PriorityQueue<>();
 
@@ -25,9 +29,9 @@ class Solution {
 
 class Solution {
     public int nthUglyNumber(int n) {
-        int[] factores = new int[]{2, 3, 5};
+        int[] factores = new int[] { 2, 3, 5 };
 
-        int[] dp= new int[n];
+        int[] dp = new int[n];
         dp[0] = 1;
         int p2 = 0;
         int p3 = 0;
@@ -41,8 +45,8 @@ class Solution {
             }
             if (dp[i] == n3) {
                 p3++;
-            } 
-            if (dp[i] == n5){
+            }
+            if (dp[i] == n5) {
                 p5++;
             }
         }
